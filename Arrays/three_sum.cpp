@@ -15,8 +15,8 @@ public:
             while(j<k){
                 if(nums[j] + nums[k] + element == 0){
                     ans.push_back({{element,nums[j],nums[k]}});
-                   j++;
-                   k--;
+                    j++;
+                    k--;
                     while(j<k && nums[j] == nums[j-1]){
                         j++;
                     }
