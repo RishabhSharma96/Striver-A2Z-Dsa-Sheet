@@ -1,5 +1,4 @@
 /*Complete the function below
-
 struct Node
 {
     int data;

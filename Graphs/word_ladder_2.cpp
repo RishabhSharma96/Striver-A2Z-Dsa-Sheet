@@ -12,7 +12,7 @@ public:
         q.push({beginWord});
 
         while(!q.empty()){
-
+ 
             vector<string> temp = q.front();
             q.pop();
 

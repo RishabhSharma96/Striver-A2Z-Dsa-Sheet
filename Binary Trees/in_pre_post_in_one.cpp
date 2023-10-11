@@ -19,7 +19,7 @@ public:
 
         if(!root) return pre ; 
 
-        stack<pair<TreeNode*,int>> q;
+        stack<pair<TreeNode*,int>> q; // for {node, num_choice_for_traversal}
         q.push({root,1});
 
         while(!q.empty()){

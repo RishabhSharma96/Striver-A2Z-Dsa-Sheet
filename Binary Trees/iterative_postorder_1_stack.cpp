@@ -14,7 +14,7 @@ class Solution
 public:
     vector<int> postorderTraversal(TreeNode *root)
     {
-        stack<pair<TreeNode *, pair<int, int>>> s; // node left right
+        stack<pair<TreeNode *, pair<int, int>>> s; // {node, {left ,right}}
         vector<int> ans;
         if (!root)
         {

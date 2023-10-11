@@ -1,5 +1,4 @@
 // User function Template for C++
-
 // Function to return the ceil of given number in BST.
 
 void solve(Node* root, int & ans, int input){

@@ -12,9 +12,9 @@ public:
         }
 
         helper.push_back(counter);
-        solve(ans,helper,counter+1,digitCount-1,sum-counter);
+        solve(ans,helper,counter+1,digitCount-1,sum-counter); // take 
         helper.pop_back();
-        solve(ans,helper,counter+1,digitCount,sum);
+        solve(ans,helper,counter+1,digitCount,sum); // not take
 
     }
 

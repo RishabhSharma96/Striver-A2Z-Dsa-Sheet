@@ -1,5 +1,5 @@
 class Solution{
-  public:
+    public:
     
     int solve(int index , int length, int price[] , int n, vector<vector<int>> & dp){
         if(index == 0){
@@ -18,7 +18,7 @@ class Solution{
         }
         return dp[index][length] = max(cut,notcut);
     }
-  
+
     int cutRod(int price[], int n) {
         // vector<vector<int>> dp(n , vector<int> (n+1, -1));
         // return solve(n-1,n,price,n,dp) ;

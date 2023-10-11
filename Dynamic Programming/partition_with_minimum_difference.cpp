@@ -25,7 +25,6 @@ class Solution{
                 if(s >= arr[index]){
                     take = dp[index-1][s - arr[index]];
                 }
-                
                 dp[index][s] = take || nottake ;
             }
         }

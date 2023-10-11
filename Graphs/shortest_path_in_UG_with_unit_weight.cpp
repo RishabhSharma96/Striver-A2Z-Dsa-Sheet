@@ -9,7 +9,7 @@ class Solution {
             adj[it[1]].push_back(it[0]); 
         }
         
-        queue<pair<int,int>> q ;
+        queue<pair<int,int>> q ; // for -> {node, distance_of_that_node_from_source}
         q.push({src,0});
         vector<int> visited(N,0);
         vector<int> distance(N,-1);

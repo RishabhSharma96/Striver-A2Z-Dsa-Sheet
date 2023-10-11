@@ -37,6 +37,5 @@ class Solution {
     int solve(int n, int m, vector<vector<int>>& grid) {
         vector<vector<vector<int>>> dp (n, vector<vector<int>>(m, vector<int>(m,-1)));
         return solve(0,0,m-1,grid,n,m,dp);
-        
     }
 };

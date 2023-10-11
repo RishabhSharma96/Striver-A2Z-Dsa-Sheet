@@ -1,7 +1,7 @@
 // User function Template for C++
 
 class Solution {
-  public:
+    public:
     /*  Function to implement Bellman Ford
     *   edges: vector of vectors which represents the graph
     *   S: source vertex to start traversing graph with
@@ -30,9 +30,6 @@ class Solution {
 				return { -1};
 			}
 		}
-
-
 		return distance;
-        
     }
 };

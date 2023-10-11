@@ -22,6 +22,22 @@ class DisjointSet{
         return parent[node] = findUltimateParent(parent[node]);
     }
 
+    void unionBySize(int u, int v) {
+        int ulp_u = findUltimateParent(u);
+        int ulp_v = findUltimateParent(v);
+        if (ulp_u == ulp_v){
+            return ;
+        }
+        if (size[ulp_u] < size[ulp_v]) {
+            parent[ulp_u] = ulp_v;
+            size[ulp_v] += size[ulp_u];
+        }
+        else {
+            parent[ulp_v] = ulp_u;
+            size[ulp_u] += size[ulp_v];
+        }
+    }
+
     void unionByRank(int u, int v){
         int ulp_u = findUltimateParent(u);
         int ulp_v = findUltimateParent(v);
@@ -37,22 +53,6 @@ class DisjointSet{
         else{
             parent[ulp_v] = ulp_u;
             rank[ulp_u]++;
-        }
-    }
-
-    void unionBySize(int u, int v) {
-        int ulp_u = findUltimateParent(u);
-        int ulp_v = findUltimateParent(v);
-        if (ulp_u == ulp_v){
-            return ;
-        }
-        if (size[ulp_u] < size[ulp_v]) {
-            parent[ulp_u] = ulp_v;
-            size[ulp_v] += size[ulp_u];
-        }
-        else {
-            parent[ulp_v] = ulp_u;
-            size[ulp_u] += size[ulp_v];
         }
     }
 };

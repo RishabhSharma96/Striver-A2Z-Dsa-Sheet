@@ -34,7 +34,6 @@ class Solution {
         // vector<vector<int>> dp(n, vector<int> (4,-1));
         // return solve(points,n-1,3,dp);
         
-        
         vector<vector<int>> dp(n, vector<int> (4,0));
         
         dp[0][0] = max(points[0][1], points[0][2]);

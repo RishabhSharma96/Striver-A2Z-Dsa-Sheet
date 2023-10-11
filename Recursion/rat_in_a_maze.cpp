@@ -9,11 +9,7 @@ class Solution{
             return ;
         }
         
-        // if(row<0 || row>=n || col<0 || col>=n){
-        //     return ;
-        // }
-        
-        if(row+1<n &&maze[row+1][col] == 1 && visited[row+1][col] == 0){
+        if(row+1<n && maze[row+1][col] == 1 && visited[row+1][col] == 0){
             visited[row][col] = 1;
             solve(maze,visited,ans,n,row+1,col,helper+"D");
             visited[row][col] = 0;

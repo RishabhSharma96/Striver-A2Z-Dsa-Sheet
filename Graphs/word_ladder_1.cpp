@@ -8,6 +8,7 @@ public:
         for(auto it : wordList){
             st.insert(it);
         }
+        
         q.push({beginWord, 1});
         st.erase(beginWord);
 
